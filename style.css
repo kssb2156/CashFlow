@@ -1,0 +1,228 @@
+@import url('https://cdnjs.cloudflare.com/ajax/libs/animate.css/4.1.1/animate.min.css');
+@import url('https://fonts.googleapis.com/css2?family=Kanit:wght@300;400;600;700&display=swap');
+
+body {
+    background-color: #f0f4f8; /* Light blue-gray background */
+    font-family: 'Kanit', sans-serif;
+}
+
+.app-container {
+    max-width: 500px;
+    margin: 0 auto;
+    background-color: #fff;
+    min-height: 100vh;
+    box-shadow: 0 0 20px rgba(0, 0, 0, 0.1);
+    position: relative;
+    padding-bottom: 70px;
+    overflow: hidden;
+}
+
+header {
+    background: #4a69bd; /* Darker blue header */
+    color: #fff;
+    border-bottom-left-radius: 25px;
+    border-bottom-right-radius: 25px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+}
+
+.tab-content {
+    padding-top: 1rem;
+}
+
+.summary-card {
+    display: flex;
+    align-items: center;
+    gap: 0.8rem;
+    padding: 1rem;
+    border-radius: 12px;
+    color: #fff;
+    box-shadow: 0 3px 12px rgba(0, 0, 0, 0.1);
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+
+.summary-card:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 6px 15px rgba(0, 0, 0, 0.2);
+}
+
+.income-card {
+    background-color: #55a630;
+}
+
+.expense-card {
+    background-color: #d83d3d;
+}
+
+.balance-card {
+    background-color: #4a69bd;
+}
+
+.positive-balance {
+    background-color: #4a69bd;
+}
+
+.negative-balance {
+    background-color: #ff7675;
+}
+
+.summary-icon {
+    font-size: 2rem;
+    opacity: 0.9;
+}
+
+.summary-label {
+    font-size: 0.8rem;
+    opacity: 0.9;
+    font-weight: 300;
+}
+
+.summary-value {
+    font-size: 1.5rem;
+    font-weight: bold;
+    margin: 0;
+}
+
+.list-group-item {
+    border-radius: 10px;
+    margin-bottom: 10px;
+    background-color: #f7f9fc;
+    border: 1px solid #e0e6ed;
+    box-shadow: 0 2px 5px rgba(0,0,0,0.05);
+    transition: transform 0.2s ease, box-shadow 0.2s ease;
+    padding: 1rem;
+}
+
+.list-group-item:hover {
+    transform: translateX(5px);
+    box-shadow: 0 4px 10px rgba(0,0,0,0.1);
+}
+
+.income-item .fw-bold {
+    color: #55a630;
+}
+
+.expense-item .fw-bold {
+    color: #d83d3d;
+}
+
+.tab-bar {
+    position: fixed;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: #fff;
+    height: 70px;
+    border-top: 1px solid #e0e0e0;
+    box-shadow: 0 -5px 15px rgba(0,0,0,0.05);
+    z-index: 10;
+}
+
+.tab-item {
+    text-align: center;
+    color: #999;
+    text-decoration: none;
+    padding: 0.5rem;
+    transition: color 0.3s, transform 0.3s;
+}
+
+.tab-item:hover {
+    color: #4a69bd;
+}
+
+.tab-item.active {
+    color: #4a69bd;
+    transform: translateY(-5px);
+}
+
+.tab-item .tab-icon {
+    display: block;
+    font-size: 1.5rem;
+    margin-bottom: 4px;
+}
+
+.tab-item .tab-label {
+    font-size: 0.8rem;
+    font-weight: 600;
+}
+
+.year-dropdown {
+    position: relative;
+}
+
+.year-header {
+    background-color: #e0e6ed;
+    color: #4a69bd;
+    border-radius: 12px;
+    padding: 15px;
+    font-size: 1.2rem;
+    font-weight: bold;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    box-shadow: 0 4px 8px rgba(0, 0, 0, 0.05);
+}
+
+.year-header:hover {
+    background-color: #c4d4e3;
+}
+
+.year-list {
+    background-color: #fff;
+    border: 1px solid #e0e6ed;
+    box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+    z-index: 1000;
+    overflow: hidden;
+    position: absolute;
+    width: 100%;
+}
+
+.year-list .year-option {
+    padding: 15px;
+    font-size: 1.1rem;
+    color: #333;
+    cursor: pointer;
+    transition: background-color 0.2s;
+}
+
+.year-list .year-option:hover {
+    background-color: #f0f4f8;
+}
+
+.year-list.d-none {
+    display: none !important;
+}
+
+.month-header {
+    background-color: #f0f4f8;
+    border-radius: 10px;
+    padding: 12px;
+    font-size: 1.1rem;
+    font-weight: 600;
+    cursor: pointer;
+    transition: background-color 0.3s ease;
+    margin-bottom: 8px;
+}
+
+.month-header:hover {
+    background-color: #e2e8f0;
+}
+
+.view-slip-btn {
+    background-color: transparent;
+    border: none;
+    color: #4a69bd;
+    font-size: 1.2rem;
+    padding: 0.25rem;
+    border-radius: 50%;
+    transition: background-color 0.2s;
+}
+
+.view-slip-btn:hover {
+    background-color: #e0e6ed;
+}
+
+.month-list.d-none {
+    display: none !important;
+}
