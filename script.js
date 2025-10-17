@@ -16,9 +16,11 @@ document.addEventListener('DOMContentLoaded', () => {
     // All transaction data
     let allPayments = [
         // เพิ่มสถานะ 'pending' สำหรับรายการที่ยังไม่เข้า/ออก
-        { id: 20, date: '13/10/2568', amount: 10000, description: 'ยืมเงินอ้อน', type: 'expense', status: 'pending', year: 2568, slip: 'https://s.imgz.io/2025/10/13/image597147197136f7b2.png' },        
-        { id: 19, date: '26/09/2568', amount: 40000, description: 'ยืมเงินอ้อน', type: 'expense', status: 'pending', year: 2568, slip: 'https://s.imgz.io/2025/09/26/image0745d3ad3d6373d2.png' },
-        // รายการที่คุณต้องการให้แสดงยอดแต่ไม่นับรวม
+        // { id: 20, date: '13/10/2568', amount: 10000, description: 'ยืมเงินอ้อน', type: 'expense', status: 'pending', year: 2568, slip: 'https://s.imgz.io/2025/10/13/image597147197136f7b2.png' }
+         // รายการที่คุณต้องการให้แสดงยอดแต่ไม่นับรวม
+        { id: 21, date: '17/10/2568', amount: 50000, description: 'คืนเงิน', type: 'income', year: 2568, slip: 'https://s.imgz.io/2025/10/17/image541a3305986e9f46.png' },
+        { id: 20, date: '13/10/2568', amount: 10000, description: 'ยืมเงินอ้อน', type: 'expense',  year: 2568, slip: 'https://s.imgz.io/2025/10/13/image597147197136f7b2.png' },        
+        { id: 19, date: '26/09/2568', amount: 40000, description: 'ยืมเงินอ้อน', type: 'expense',  year: 2568, slip: 'https://s.imgz.io/2025/09/26/image0745d3ad3d6373d2.png' },
         { id: 18, date: '19/09/2568', amount: 40000, description: 'คืนเงิน', type: 'income', year: 2568, slip: 'https://s.imgz.io/2025/09/19/imageff13c086e37918c1.png' },
         { id: 17, date: '24/08/2568', amount: 40000, description: 'ยืมเงินอ้อน', type: 'expense', year: 2568, slip: 'https://s.imgz.io/2025/09/10/S__1393463066cfcb1061b2e7a8.jpg' },        
         { id: 16, date: '15/08/2568', amount: 49000, description: 'คืนเงิน+ค่าดอก', type: 'income', year: 2568, slip: 'https://s.imgz.io/2025/09/10/S__13942786d943a0a4018c5ab6.jpg' },
