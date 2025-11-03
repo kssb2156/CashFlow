@@ -16,7 +16,7 @@ document.addEventListener('DOMContentLoaded', () => {
     // All transaction data
     let allPayments = [
         // เพิ่มสถานะ 'pending' สำหรับรายการที่ยังไม่เข้า/ออก
-        { id: 22, date: '31/10/2568', amount: 40000, description: 'ยืมเงินอ้อน', type: 'expense', status: 'pending', year: 2568, slip: 'https://s.imgz.io/2025/11/01/image2cf28f6146469eb7.png' }
+        { id: 22, date: '31/10/2568', amount: 40000, description: 'ยืมเงินอ้อน', type: 'expense', status: 'pending', year: 2568, slip: 'https://s.imgz.io/2025/11/01/image2cf28f6146469eb7.png' },
          // รายการที่คุณต้องการให้แสดงยอดแต่ไม่นับรวม
         { id: 21, date: '17/10/2568', amount: 50000, description: 'คืนเงิน', type: 'income', year: 2568, slip: 'https://s.imgz.io/2025/10/17/image541a3305986e9f46.png' },
         { id: 20, date: '13/10/2568', amount: 10000, description: 'ยืมเงินอ้อน', type: 'expense',  year: 2568, slip: 'https://s.imgz.io/2025/10/13/image597147197136f7b2.png' },        
